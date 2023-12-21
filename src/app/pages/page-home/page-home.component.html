@@ -1,8 +1,12 @@
 <div class="container">
     <h1 class="title">Plantdex</h1>
+
+    <!-- essai d'appel d'une methode via un clic
+    <button (click)="displayAfficher()">Affiche ce que je love</button>
+    <div *ngIf="jaime">J'aime les plantes</div>
+    -->
+    
     <div class="container-plants">
-        <ul>
-            <li *ngFor="let plant of plantsToDisplay">{{ plant.nom }}</li> <!--//boucler dessus pr afficher le nom de mes plantes-->
-        </ul>
+        <app-card-plant *ngFor="let plantData of plantsToDisplay" [plant]="plantData"></app-card-plant> <!--le lien de propriété, je donne le nom de plantData, c'est le nom de ma variable qui va parcourir mon tableau planttodysplay, -->
     </div>
 </div>

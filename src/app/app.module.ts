@@ -9,6 +9,7 @@ import { PageMyPlantsComponent } from './pages/page-my-plants/page-my-plants.com
 import { PageAdminComponent } from './pages/page-admin/page-admin.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CardPlantComponent } from './components/card-plant/card-plant.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     PageHomeComponent,
     PageMyPlantsComponent,
     PageAdminComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CardPlantComponent
   ],
   imports: [
     BrowserModule,
