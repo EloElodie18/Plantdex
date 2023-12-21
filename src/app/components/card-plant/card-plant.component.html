@@ -1,7 +1,7 @@
 <div class="card" style="width: 18rem;">
     <img class="card-img-top" [src]="plant.image" [alt]="plant.nom">
     <div class="card-body">
-        <h5 class="card-title">{{ plant.nom }}</h5>
+        <h5 class="card-title text-truncate" [title]="plant.nom" >{{ plant.nom }}</h5> <!--text-truncate permet de cmettre des petits point si le nom est trop long, et le "[title]= permet d'afficher le nom de la plante qd tu passes ta souris"-->
         <p class="card-text">{{ plant.categorie }}</p>
         <a href="#" class="btn btn-success">Je l'ai</a>
     </div>
