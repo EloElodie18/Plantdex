@@ -1,12 +1,14 @@
-<div class="container">
-    <h1 class="title">Plantdex</h1>
+<div class="d-flex"> <!--ajoute directement ttes mes colonnes en colonne cote à cote-->
 
-    <!-- essai d'appel d'une methode via un clic
-    <button (click)="displayAfficher()">Affiche ce que je love</button>
-    <div *ngIf="jaime">J'aime les plantes</div>
-    -->
-    
-    <div class="container-plants">
-        <app-card-plant *ngFor="let plantData of plantsToDisplay" [plant]="plantData"></app-card-plant> <!--le lien de propriété, je donne le nom de plantData, c'est le nom de ma variable qui va parcourir mon tableau planttodysplay, -->
+    <app-filter-side-bar 
+    [categoriesToDisplay]="categoriesToSend"
+    (categoriesToFilter) = "filterPlantsByCategories($event)"
+    ></app-filter-side-bar>
+
+    <div class="container-plants p-4">
+        <app-search-bar>Saisie recherche</app-search-bar>
+        <app-card-plant *ngFor="let plantData of plantsToDisplay" 
+        [plant]="plantData"
+        ></app-card-plant> <!--le lien de propriété, je donne le nom de plantData, c'est le nom de ma variable qui va parcourir mon tableau planttodysplay, -->
     </div>
 </div>

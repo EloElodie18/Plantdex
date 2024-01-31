@@ -3,3 +3,9 @@
     flex-wrap: wrap;
     gap: 2rem;
 }
+
+.classe {
+    width: 900%;
+    height: 40px;
+    display: flex;
+}

@@ -9,7 +9,7 @@ const routes: Routes = [ //fr ttes les routes dt on aura besoin pour le site
   { path: '', component: PageHomeComponent }, //http://localhost:4200  en ajoutant cette ligne, j'ai mon 3eme import qui s'ajoute=parametrage sur route, vers cette url
   { path: 'my-plants', component: PageMyPlantsComponent }, //idem pour le même url mais avec plants à la fin http://localhost:4200/my-plants
   { path: 'admin', component: PageAdminComponent }, 
-  { path: '**' , component: PageNotFoundComponent},
+  { path: '**' , component: PageNotFoundComponent}, // permet l'affichage de la page not found
 ];
 
 @NgModule({
