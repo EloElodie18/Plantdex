@@ -3,9 +3,13 @@
     flex-wrap: wrap;
     gap: 2rem;
 }
+.classeSearchBar {
+    width: 100%;
+    margin-top: 10px;
+    border-color: grey;
+}
 
-.classe {
-    width: 900%;
-    height: 40px;
-    display: flex;
+.divClass {
+    margin-top: 1%;
+    margin-left: 25px;
 }

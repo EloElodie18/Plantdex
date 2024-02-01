@@ -2,13 +2,20 @@
 
     <app-filter-side-bar 
     [categoriesToDisplay]="categoriesToSend"
-    (categoriesToFilter) = "filterPlantsByCategories($event)"
+    (categoriesToFilter) = "onSelector($event)"
     ></app-filter-side-bar>
 
+    <div> 
+       
+        <div class="divClass">
+        <app-search-bar (eventSearchBar)="onSearch($event)" >Saisie recherche</app-search-bar>
+        </div>
+        
     <div class="container-plants p-4">
-        <app-search-bar>Saisie recherche</app-search-bar>
+        
         <app-card-plant *ngFor="let plantData of plantsToDisplay" 
         [plant]="plantData"
         ></app-card-plant> <!--le lien de propriété, je donne le nom de plantData, c'est le nom de ma variable qui va parcourir mon tableau planttodysplay, -->
+    </div>
     </div>
 </div>
