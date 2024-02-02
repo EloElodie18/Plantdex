@@ -1,8 +1,17 @@
 .container-plants {
     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+    flex-wrap: wrap; /*me ramène à la ligne mes objets*/
+    /* gap: 2rem; */
+    justify-content: space-between; /*vient harmoniser le style de mes cards */
+    padding-top: 0;
+    align-content: space-between;
 }
+
+.one-plant {
+    width: 32%;
+    margin-bottom: 1.5rem;
+}
+
 .classeSearchBar {
     width: 100%;
     margin-top: 10px;
@@ -39,4 +48,10 @@
     background-color: white;
     border-radius: 5px;
     border-color: rgb(212, 215, 16);
+}
+
+@media (min-width: 1200px) { /*s'applique à partir de 1200px*/
+    .one-plant {
+        width: 23%;
+    }
 }

@@ -10,7 +10,7 @@
         <app-search-bar (eventSearchBar)="onSearch($event)" >Saisie recherche</app-search-bar>
         </div>             
             
-        <div class="mes3Clics">            
+        <div class="mes3Clics p-4">            
             <label for="monTri">Trier par: </label>
 
             <button id="boutonStor1Alpha" (click)='boutonStor1'>Ordre alpha</button>
@@ -20,11 +20,12 @@
             <button id="boutonStor3Ensoleil" (click)='boutonStor3'>Ensoleillement</button>
         </div>
        
-        <div class="container-plants p-4">        
-        <app-card-plant *ngFor="let plantData of plantsToDisplay" 
+        <div class="container-plants p-4">  <!--p4 c'est 1.5rem en padding, on peut le mettre là ou ds le css-->       
+        <app-card-plant class="one-plant" 
+        *ngFor="let plantData of plantsToDisplay" 
         [plant]="plantData"
         ></app-card-plant> <!--le lien de propriété, je donne le nom de plantData, c'est le nom de ma variable qui va parcourir mon tableau planttodysplay, -->
         </div>
     </div>
-    
+
 </div>
