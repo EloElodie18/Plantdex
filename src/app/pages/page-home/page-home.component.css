@@ -13,3 +13,30 @@
     margin-top: 1%;
     margin-left: 25px;
 }
+
+.mes3Clics {
+    margin-left: 25px;
+    height: 25px;
+    margin-top: 1%;
+}
+
+#boutonStor1Alpha {
+    color: rgb(14, 180, 14);
+    background-color: white;
+    border-radius: 5px;
+    border-color: rgb(14, 180, 14);
+}
+
+#boutonStor2Arrosa {
+    color: rgb(17, 174, 164);
+    background-color: white;
+    border-radius: 5px;
+    border-color: rgb(17, 174, 164);
+}
+
+#boutonStor3Ensoleil {
+    color: rgb(212, 215, 16);
+    background-color: white;
+    border-radius: 5px;
+    border-color: rgb(212, 215, 16);
+}

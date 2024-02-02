@@ -11,14 +11,9 @@ export class FilterSideBarComponent {
   @Output() categoriesToFilter = new EventEmitter <string[]>() ;
 
   onCheckedCategories(event: Event) {
-    // console.log(event);
-    // console.log(event.target.checked);
-    // console.log(event.target.values);
-    // taget est l'évenement d'où est parti l'evenement
+  
     const target = event.target as HTMLInputElement;
-    // console.log(target);
-    // checkedCategories = this.categoriesToDisplay;
-    // console.log('lala', checkedCategories);
+  
     if (target.checked) {
       if(this.checkedCategories.length===this.categoriesToDisplay.length){
         this.checkedCategories=[];
